@@ -29,7 +29,7 @@ paths:
                 image_size:
                   type: string
                   default: "1024x1024"
-                  enum: ["1024x1024", "512x1024", "768x512", "768x1024", "1024x576", "576x1024"]
+                  enum: ["1024x1024", "512x1024", "768x512", "768x1024", "1024x576", "576x1024", "1024x768"]
                 batch_size:
                   type: integer
                   default: 1
@@ -39,6 +39,9 @@ paths:
                 guidance_scale:
                   type: number
                   default: 7.5
+                seed:
+                  type: integer
+                  default: 25
               required:
                 - prompt
       responses:
